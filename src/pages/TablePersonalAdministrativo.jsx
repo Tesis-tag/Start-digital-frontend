@@ -27,7 +27,7 @@ const TablePersonlaAdministrativo = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/personal/personal-administrativo');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/personal/personal-administrativo');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -58,7 +58,7 @@ const TablePersonlaAdministrativo = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/gestion/personal/personal-administrativo/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/gestion/personal/personal-administrativo/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {

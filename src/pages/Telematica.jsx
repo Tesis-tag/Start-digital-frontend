@@ -89,7 +89,7 @@ const romanToInt = (roman) => {
 useEffect(() => {
   const fetchMaterias = async () => {
     try {
-      const response = await axios.get('http://localhost:9000/materias-telematica');
+      const response = await axios.get('https://start-digital.onrender.com/materias-telematica');
       
       // Verifica que response y response.data existan
       if (response && response.data) {
@@ -106,7 +106,7 @@ useEffect(() => {
 
   const fetchAutoridades = async () => {
     try {
-      const response = await axios.get('http://localhost:9000/autoridades');
+      const response = await axios.get('https://start-digital.onrender.com/autoridades');
       const autoridadesData = response.data;
 
       // Verifica que autoridadesData tenga datos

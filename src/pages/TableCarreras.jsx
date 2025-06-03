@@ -21,7 +21,7 @@ const TableCarreras = () => {
   useEffect(() => {
     const fetchMaterias = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/materias-telematica');
+        const response = await axios.get('https://start-digital.onrender.com/materias-telematica');
         // Ordenar las materias por el número de semestre
         setMaterias([...response.data].sort((a, b) => a.data.semestre - b.data.semestre))
         console.log(response.data);
@@ -59,7 +59,7 @@ const TableCarreras = () => {
   const eliminar = async (idMateria) => {
     
     try {
-        await axios.delete(`http://localhost:9000/materias-telematica/${idMateria}`);
+        await axios.delete(`https://start-digital.onrender.com/materias-telematica/${idMateria}`);
         console.log('Materia eliminado correctamente');
         
     } catch (error) {

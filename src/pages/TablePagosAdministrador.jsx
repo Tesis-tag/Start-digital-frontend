@@ -39,7 +39,7 @@ const TablePagosAdministrador = () => {
   useEffect(() => {
     const fetchPagos = async () => { // Cambiado de fetchProfesores a fetchPagos
       try {
-        const response = await axios.get(`http://localhost:9000/gestion/calendario/mis-sesiones/${id}`);
+        const response = await axios.get(`https://start-digital.onrender.com/gestion/calendario/mis-sesiones/${id}`);
         setPagos(response.data); // Cambiado de setProfesores a setPagos
         console.log(response.data);
       } catch (error) {
@@ -72,7 +72,7 @@ const TablePagosAdministrador = () => {
 
   const eliminarPago = async (idPago) => { 
     try {
-      await axios.delete(`http://localhost:9000/gestion/promociones-fotos/${idPago}`);
+      await axios.delete(`https://start-digital.onrender.com/gestion/promociones-fotos/${idPago}`);
       console.log('Pago eliminado correctamente'); 
     } catch (error) {
       console.error('Error al eliminar el pago:', error); 

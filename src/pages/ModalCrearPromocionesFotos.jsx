@@ -69,7 +69,7 @@ const ModalCrearPromocionesFotos = () => {
                     formData.append(key, profesor[key]);
                 }
                 formData.append('img', acceptedFiles[0]);
-                const response = await axios.post('http://localhost:9000/gestion/promociones-fotos/registrar', formData, {
+                const response = await axios.post('https://start-digital.onrender.com/gestion/promociones-fotos/registrar', formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }

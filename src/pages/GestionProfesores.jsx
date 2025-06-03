@@ -82,7 +82,7 @@ const GesionProfesores = () => {
                 // Agregar la imagen al FormData
                 formData.append('img', acceptedFiles[0]);
                 // Enviar la solicitud al servidor
-                const response = await axios.post('http://localhost:9000/registar-profesor', formData, {
+                const response = await axios.post('https://start-digital.onrender.com/registar-profesor', formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data' // Especificar el tipo de contenido
                     }

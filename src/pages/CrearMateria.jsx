@@ -62,7 +62,7 @@ const CrearProfesor = () => {
         }else{
             try {
                 // Enviar la solicitud al servidor
-                const response = await axios.post('http://localhost:9000/registar-materia', materia, {
+                const response = await axios.post('registar-materia', materia, {
                     
                 }).then(
                     Swal.fire({

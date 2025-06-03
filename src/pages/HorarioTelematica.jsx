@@ -79,7 +79,7 @@ const HorarioTelematica = () => {
         const cargarHorario = async () => {
           setCargando(true);
           try {
-            const response = await axios.get(`http://localhost:9000/horarios/update/${semestreSeleccionado}/${seccionSeleccionada}`);
+            const response = await axios.get(`https://start-digital.onrender.com/horarios/update/${semestreSeleccionado}/${seccionSeleccionada}`);
             const data = response.data;
       
             setHorario(data.data);

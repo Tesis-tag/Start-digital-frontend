@@ -55,7 +55,7 @@ const ModalEditarUsuarios = ({ datosUsuario, onClose }) => {
 
     const modificarEstadoUsuario = async () => {
         try {
-            const response = await axios.put(`http://localhost:9000/gestion/usuarios/editar/${modificarUsuario.id}`, modificarUsuario.data);
+            const response = await axios.put(`https://start-digital.onrender.com/gestion/usuarios/editar/${modificarUsuario.id}`, modificarUsuario.data);
             console.log('Usuario actualizado correctamente:', response.data);
         } catch (error) {
             console.error('Error al actualizar el usuario:', error);

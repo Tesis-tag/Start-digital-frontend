@@ -33,7 +33,7 @@ const ContenidoPrincipal = () => {
   useEffect(() => {
     const fetchServicios = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/servicios/');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/servicios/');
         setServicios(response.data);
       } catch (error) {
         console.error('Error al obtener los servicios:', error);
@@ -67,7 +67,7 @@ const ContenidoPrincipal = () => {
   useEffect(() => {
     const fetchEgresados = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/egresados/');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/egresados/');
         
         // Ordenar por anoEgreso de forma descendente
         const sortedEgresados = response.data.sort((a, b) => b.data.anoEgreso - a.data.anoEgreso);
@@ -83,7 +83,7 @@ const ContenidoPrincipal = () => {
 
     const fetchNoticias = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/noticias/');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/noticias/');
         
         // Ordenar por anoEgreso de forma descendente
         const sorted = response.data.sort((a, b) => b.data.fecha - a.data.fecha);
@@ -99,7 +99,7 @@ const ContenidoPrincipal = () => {
     
     const fetchEventos = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/eventos/');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/eventos/');
         
         // Ordenar por anoEgreso de forma descendente
         const sorted = response.data.sort((a, b) => b.data.fecha - a.data.fecha);
@@ -142,7 +142,7 @@ const registrarMensaje = async () => {
   } else {
       try {
           // Enviar la solicitud al servidor
-          const response = await axios.post('http://localhost:9000/gestion/mensajes/registrar', mensaje, {
+          const response = await axios.post('https://start-digital.onrender.com/gestion/mensajes/registrar', mensaje, {
               headers: {
                   'Content-Type': 'application/json' // Cambiar a application/json
               }

@@ -74,7 +74,7 @@ const ModalCrearSesionFotos = ({ userId }) => {
     
                 formData.append('userId', userId); // Agregar el ID del usuario
     
-                const response = await axios.post('http://localhost:9000/gestion/sesiones-fotos/registrar', formData, {
+                const response = await axios.post('https://start-digital.onrender.com/gestion/sesiones-fotos/registrar', formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }

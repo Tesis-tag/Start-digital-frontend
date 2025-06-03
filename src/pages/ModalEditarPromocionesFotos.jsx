@@ -105,7 +105,7 @@ const ModalEditarPromocionesFotos = (datosProfesor) => {
 
     const modificarEstadoProfesor = async () => {
         try {
-            const response = await axios.put(`http://localhost:9000/gestion/promociones-fotos/editar/${modificarProfesor.datosProfesor.id}`, modificarProfesor.datosProfesor.data);
+            const response = await axios.put(`https://start-digital.onrender.com/gestion/promociones-fotos/editar/${modificarProfesor.datosProfesor.id}`, modificarProfesor.datosProfesor.data);
             console.log('Materia actualizado correctamente:', response.data);
         } catch (error) {
             console.error('Error al actualizar la materia:', error);

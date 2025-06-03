@@ -77,7 +77,7 @@ const ModalEditarPagoAdmin = ({ datosProfesor }) => {
         formData.append('estatus', modificarProfesor.estatus); // Agregar el campo estatus
 
         try {
-            const response = await axios.put(`http://localhost:9000/gestion/calendario/admin/editar-pago/${datosProfesor.id}`, formData, {
+            const response = await axios.put(`https://start-digital.onrender.com/gestion/calendario/admin/editar-pago/${datosProfesor.id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

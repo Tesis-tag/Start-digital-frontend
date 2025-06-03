@@ -11,7 +11,7 @@ const PublicNoticias = () => {
     useEffect(() => {
       const fetchProfesores = async () => {
           try {
-              const response = await axios.get('http://localhost:9000/gestion/noticias/');
+              const response = await axios.get('https://start-digital.onrender.com/gestion/noticias/');
               setProfesores(response.data);
               console.log(response.data);
               console.log(profesores);

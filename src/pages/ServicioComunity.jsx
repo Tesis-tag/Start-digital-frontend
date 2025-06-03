@@ -25,7 +25,7 @@ const ServicioComunty = () => {
   useEffect(() => {
     const fetchServicios = async () => {
       try {
-        const response = await axios.get(`http://localhost:9000/gestion/servicios/`);
+        const response = await axios.get(`https://start-digital.onrender.com/gestion/servicios/`);
         setServicios(response.data);
       } catch (error) {
         console.error('Error al obtener los servicios:', error);
@@ -34,7 +34,7 @@ const ServicioComunty = () => {
 
     const fetchPlanActivo = async () => {
       try {
-        const response = await axios.get(`http://localhost:9000/gestion/calendario/pagos/activo/${id}`);
+        const response = await axios.get(`https://start-digital.onrender.com/gestion/calendario/pagos/activo/${id}`);
         setPlanActivo(response.data);
       } catch (error) {
         console.error('Error al obtener el plan activo:', error);
@@ -98,7 +98,7 @@ const ServicioComunty = () => {
       };
 
       try {
-        await axios.post('http://localhost:9000/gestion/calendario/pagos/registrar', nuevoPago);
+        await axios.post('https://start-digital.onrender.com/gestion/calendario/pagos/registrar', nuevoPago);
         Swal.fire({
           title: "Pago Generado",
           text: "Se ha generado tu pago. Comunícate con nosotros a través de WhatsApp para más información.",

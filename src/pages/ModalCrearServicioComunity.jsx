@@ -33,7 +33,7 @@ const ModalCrearServicioComunity = () => {
             });
         } else {
             try {
-                const response = await axios.post('http://localhost:9000/gestion/servicios/registrar', servicio);
+                const response = await axios.post('https://start-digital.onrender.com/gestion/servicios/registrar', servicio);
                 Swal.fire({
                     title: "Registrado",
                     text: "Servicio registrado con éxito",

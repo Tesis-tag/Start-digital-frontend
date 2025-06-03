@@ -28,7 +28,7 @@ const TableCalendario = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/calendario/get-events');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/calendario/get-events');
         const formattedEvents = response.data.map(event => ({
           id: event.id,
           title: event.title,
@@ -84,7 +84,7 @@ const TableCalendario = () => {
     };
 
     try {
-      await axios.post('http://localhost:9000/gestion/calendario/save', newEvent);
+      await axios.post('https://start-digital.onrender.com/gestion/calendario/save', newEvent);
       setEvents([...events, newEvent]);
       setTitle('');
       setDescription('');
@@ -97,7 +97,7 @@ const TableCalendario = () => {
 
   const handleDelete = async () => {
     try {
-        await axios.delete(`http://localhost:9000/gestion/calendario/delete/${selectedEvent.id}`); // Cambia la URL según tu API
+        await axios.delete(`https://start-digital.onrender.com/gestion/calendario/delete/${selectedEvent.id}`); // Cambia la URL según tu API
         setEvents(events.filter(event => event.id !== selectedEvent.id)); // Elimina el evento del estado
         handleClose(); // Cierra la tarjeta
         Swal.fire('Eliminado!', 'Tu evento ha sido eliminado.', 'success');
@@ -112,12 +112,7 @@ const TableCalendario = () => {
       <div className="cont-table">
         <div className="div-table">
           <div className="div-superior">
-            <Link to="/gestion">
-              <button 
-            className="w-24 bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-500 hover:to-cyan-700 text-white py-2 rounded-lg mx-auto block focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 mb-2">
-                Atrás
-              </button>
-            </Link>
+        
             <h2 className="text-2xl leading-tight">Materias de la carrera de Telemática</h2>
           </div>
           <div className="rounded-lg border border-gray-200 overflow-auto flex justify-center">

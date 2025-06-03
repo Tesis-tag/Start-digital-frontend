@@ -13,7 +13,7 @@ const PublicPersonalAdministrativo = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/personal/personal-administrativo');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/personal/personal-administrativo');
             setProfesores(response.data);
             console.log(response.data);
         } catch (error) {

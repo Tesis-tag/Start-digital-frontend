@@ -33,7 +33,7 @@ const MisSesiones = () => {
     const fetchSesiones = async () => {
       const userId = localStorage.getItem('userId'); // Obtener el userId desde localStorage
       try {
-        const response = await axios.get(`http://localhost:9000/gestion/sesiones-fotos/user/${userId}`); // Agregar userId a la ruta
+        const response = await axios.get(`https://start-digital.onrender.com/gestion/sesiones-fotos/user/${userId}`); // Agregar userId a la ruta
         setProfesores(response.data);
       } catch (error) {
         console.error('Error al obtener los profesores:', error);

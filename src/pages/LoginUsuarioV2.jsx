@@ -46,7 +46,7 @@ const LoginUsuarioV2 = () => {
         }
     
         try {
-            const response = await axios.post('http://localhost:9000/user-session/login', usuario);
+            const response = await axios.post('https://start-digital.onrender.com/user-session/login', usuario);
             const token = response.data.token;
             const id = response.data.userId;
     
@@ -120,7 +120,7 @@ const LoginUsuarioV2 = () => {
         }
     
         try {
-            const response = await axios.post('http://localhost:9000/user-session/new', nuevoUsuario);
+            const response = await axios.post('https://start-digital.onrender.com/user-session/new', nuevoUsuario);
             Swal.fire({
                 background: 'white',
                 color: 'black',

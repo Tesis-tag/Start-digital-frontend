@@ -27,7 +27,7 @@ const TableEgresados = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/egresados/');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/egresados/');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -58,7 +58,7 @@ const TableEgresados = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/gestion/egresados/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/gestion/egresados/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {

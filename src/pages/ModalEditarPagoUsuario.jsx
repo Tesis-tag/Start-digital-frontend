@@ -100,7 +100,7 @@ const ModalEditarPagoUsuario = ({ datosProfesor }) => {
         }
 
         try {
-            const response = await axios.put(`http://localhost:9000/gestion/calendario/editar-pago/${datosProfesor.id}`, formData, {
+            const response = await axios.put(`https://start-digital.onrender.com/gestion/calendario/editar-pago/${datosProfesor.id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

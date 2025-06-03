@@ -38,7 +38,7 @@ const TableEventos = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/eventos/');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/eventos/');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -69,7 +69,7 @@ const TableEventos = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/gestion/eventos/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/gestion/eventos/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {
@@ -141,9 +141,7 @@ const renderPageNumbers = () => {
       
       <div className="py-8 ">
         <div className=" flex flex-row tabla justify-between w-full mb-1 sm:mb-0">
-        <Link to="/gestion"><button className="w-24 bg-gradient-to-r from-cyan-400 to-cyan-600 hover:from-cyan-500 hover:to-cyan-700 text-white py-2 rounded-lg mx-auto block focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 mb-2">
-            Atrás
-        </button></Link>
+   
           <h2 className="text-2xl leading-tight">Eventos</h2>
           <div className="text-end">
             <form className="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">

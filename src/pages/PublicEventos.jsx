@@ -11,7 +11,7 @@ const PublicEventos = () => {
     useEffect(() => {
       const fetchProfesores = async () => {
           try {
-              const response = await axios.get('http://localhost:9000/gestion/eventos/');
+              const response = await axios.get('https://start-digital.onrender.com/gestion/eventos/');
               setProfesores(response.data);
               console.log(response.data);
               console.log(profesores);

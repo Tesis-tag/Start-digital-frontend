@@ -37,7 +37,7 @@ const TablePagosDeUsuario = () => {
   useEffect(() => {
     const fetchPagos = async () => { // Cambiado de fetchProfesores a fetchPagos
       try {
-        const response = await axios.get(`http://localhost:9000/gestion/calendario/pagos/usuario/${id}`);
+        const response = await axios.get(`https://start-digital.onrender.com/gestion/calendario/pagos/usuario/${id}`);
         setPagos(response.data); // Cambiado de setProfesores a setPagos
         console.log(response.data);
       } catch (error) {
@@ -146,7 +146,7 @@ const TablePagosDeUsuario = () => {
                     {
                       currentItems.map((pago) => (
                         <tr key={pago.id}>
-                          <td className="whitespace-nowrap px-2 py-2 text-gray-700 text-center">{pago.title}$</td>
+                          <td className="whitespace-nowrap px-2 py-2 text-gray-700 text-center">{pago.title}</td>
                           <td className="whitespace-nowrap px-2 py-2 text-gray-700 text-center">{pago.description}</td>
                           <td className="whitespace-nowrap px-2 py-2 text-gray-700 text-center">
                             {new Date(pago.start).toLocaleString('es-ES', {

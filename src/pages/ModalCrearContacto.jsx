@@ -36,7 +36,7 @@ const ModalCrearContacto = () => {
         }else{
             try {
                 
-                const response = await axios.post('http://localhost:9000/gestion/contacto/registrar', profesor).then(
+                const response = await axios.post('https://start-digital.onrender.com/gestion/contacto/registrar', profesor).then(
                     Swal.fire({
                         title: "Registrado",
                         text: "Profesor registrado con exito",

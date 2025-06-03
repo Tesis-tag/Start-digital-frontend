@@ -40,7 +40,7 @@ const TablePromocionesFotos = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/promociones-fotos/');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/promociones-fotos/');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -71,7 +71,7 @@ const TablePromocionesFotos = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/gestion/promociones-fotos/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/gestion/promociones-fotos/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {

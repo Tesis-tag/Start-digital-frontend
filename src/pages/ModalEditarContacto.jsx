@@ -72,7 +72,7 @@ const ModalEditarContacto = (datosProfesor) => {
         console.log(modificarProfesor.datosProfesor.id)
 
         try {
-              const response = await axios.put(`http://localhost:9000/gestion/contacto/editar/${modificarProfesor.datosProfesor.id}`, modificarProfesor.datosProfesor.data)
+              const response = await axios.put(`https://start-digital.onrender.com/gestion/contacto/editar/${modificarProfesor.datosProfesor.id}`, modificarProfesor.datosProfesor.data)
               console.log('Materia actualizado correctamente:', response.data);
           } catch (error) {
               console.error('Error al actualizar la materia:', error);

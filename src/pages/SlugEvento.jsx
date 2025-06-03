@@ -22,7 +22,7 @@ const SlugEvento = () => {
   useEffect(() => {
     const fetchNoticia = async () => {
       try {
-        const response = await axios.post(`http://localhost:9000/gestion/eventos/slug`, { slug }); // Cambia la URL según tu API
+        const response = await axios.post(`https://start-digital.onrender.com/gestion/eventos/slug`, { slug }); // Cambia la URL según tu API
         setNoticia(response.data.data); // Asigna la noticia recibida
         console.log(noticia);
       } catch (error) {

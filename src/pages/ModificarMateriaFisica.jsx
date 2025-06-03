@@ -110,7 +110,7 @@ const ModificarMateriaFisica = (datosMaterias) => {
         console.log(modificarMateria.datosMaterias.id)
 
         try {
-              const response = await axios.put(`http://localhost:9000/materias/fisica/editar/${modificarMateria.datosMaterias.id}`, modificarMateria.datosMaterias.data)
+              const response = await axios.put(`https://start-digital.onrender.com/materias/fisica/editar/${modificarMateria.datosMaterias.id}`, modificarMateria.datosMaterias.data)
               console.log('Materia actualizado correctamente:', response.data);
           } catch (error) {
               console.error('Error al actualizar la materia:', error);

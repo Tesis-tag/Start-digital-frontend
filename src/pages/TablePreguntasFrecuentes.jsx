@@ -38,7 +38,7 @@ const TablePreguntasFrecuentes = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/preguntas-frecuentes/');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/preguntas-frecuentes/');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -69,7 +69,7 @@ const TablePreguntasFrecuentes = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/gestion/preguntas-frecuentes/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/gestion/preguntas-frecuentes/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {

@@ -22,7 +22,7 @@ const FotosSesion = () => {
   useEffect(() => {
     const fetchFotos = async () => {
       try {
-        const response = await axios.get(`http://localhost:9000/gestion/sesiones-fotos/sesion/${id}`);
+        const response = await axios.get(`https://start-digital.onrender.com/gestion/sesiones-fotos/sesion/${id}`);
         setFotos(response.data.data.fotos || []); // Asegúrate de acceder a la ruta correcta
         setLoading(false);
       } catch (error) {

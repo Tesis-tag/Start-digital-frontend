@@ -12,7 +12,7 @@ const Contacto = () => {
       useEffect(() => {
         const fetchProfesores = async () => {
             try {
-                const response = await axios.get('http://localhost:9000/gestion/contacto/');
+                const response = await axios.get('gestion/contacto/');
                 setContactos(response.data);
                 console.log(response.data);
             } catch (error) {

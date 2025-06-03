@@ -33,7 +33,7 @@ const DashboardUser = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/calendario/get-events');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/calendario/get-events');
         const formattedEvents = response.data.map(event => ({
           id: event.id,
           title: event.title,
@@ -52,7 +52,7 @@ const DashboardUser = () => {
 
     const fetchPromociones = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/promociones-fotos/');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/promociones-fotos/');
         setPromociones(response.data);
       } catch (error) {
         console.error('Error al obtener las promociones:', error);
@@ -115,7 +115,7 @@ const DashboardUser = () => {
     };
 
     try {
-      await axios.post('http://localhost:9000/gestion/calendario/pagos/registrar', newEvent);
+      await axios.post('https://start-digital.onrender.com/gestion/calendario/pagos/registrar', newEvent);
       setEvents([...events, newEvent]);
       setSessionType('Boda');
       setMakeupService(false);

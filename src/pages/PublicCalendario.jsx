@@ -32,7 +32,7 @@ const PublicCalendario = () => {
     useEffect(() => {
       const fetchEvents = async () => {
         try {
-          const response = await axios.get('http://localhost:9000/gestion/calendario/get-events');
+          const response = await axios.get('https://start-digital.onrender.com/gestion/calendario/get-events');
           const formattedEvents = response.data.map(event => ({
             id: event.id,
             title: event.title,

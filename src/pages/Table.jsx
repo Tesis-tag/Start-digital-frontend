@@ -103,7 +103,7 @@ const Table = () => {
           }
           formData.append('img', acceptedFiles[0]);
           
-            const response = await axios.put(`http://localhost:9000/edit-profesores/${idProfesor}`, formData, {
+            const response = await axios.put(`https://start-digital.onrender.com/edit-profesores/${idProfesor}`, formData, {
               headers:{
                 'Content-Type': 'multipart/form-data'
               }
@@ -123,7 +123,7 @@ const Table = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/profesores');
+            const response = await axios.get('https://start-digital.onrender.com/profesores');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -155,7 +155,7 @@ const Table = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/profesores/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/profesores/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {

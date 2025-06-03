@@ -70,7 +70,7 @@ const TableHorarios = () => {
           data: horario,
         });
   
-        const response = await axios.post('http://localhost:9000/horarios/save', {
+        const response = await axios.post('https://start-digital.onrender.com/horarios/save', {
           semestre: semestreSeleccionado,
           seccion: seccionSeleccionada,
           data: horario,
@@ -109,7 +109,7 @@ const TableHorarios = () => {
     const cargarHorario = async () => {
       setCargando(true);
       try {
-        const response = await axios.get(`http://localhost:9000/horarios/update/${semestreSeleccionado}/${seccionSeleccionada}`);
+        const response = await axios.get(`https://start-digital.onrender.com/horarios/update/${semestreSeleccionado}/${seccionSeleccionada}`);
         const data = response.data;
   
         setHorario(data.data);

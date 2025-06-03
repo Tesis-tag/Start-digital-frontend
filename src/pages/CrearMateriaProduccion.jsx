@@ -62,7 +62,7 @@ const CrearMateriaProduccion = () => {
         }else{
             try {
                 // Enviar la solicitud al servidor
-                const response = await axios.post('http://localhost:9000/materias/produccion/registrar', materia, {
+                const response = await axios.post('https://start-digital.onrender.com/materias/produccion/registrar', materia, {
                     
                 }).then(
                     Swal.fire({

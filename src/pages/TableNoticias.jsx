@@ -36,7 +36,7 @@ const TableNoticias = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/noticias/');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/noticias/');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -67,7 +67,7 @@ const TableNoticias = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/gestion/noticias/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/gestion/noticias/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {

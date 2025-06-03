@@ -13,7 +13,7 @@ const Profesores = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/profesores');
+            const response = await axios.get('https://start-digital.onrender.com/profesores');
             setProfesores(response.data);
             console.log(response.data);
         } catch (error) {

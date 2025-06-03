@@ -17,7 +17,7 @@ const ModalProfesorTelematica = (idProfesor) => {
     const fetchProfesor = async () => {
       const id = thisIdProfesor.idProfesor;
       try {
-        const response = await axios.get(`http://localhost:9000/profesor-telematica?id=${id}`);
+        const response = await axios.get(`https://start-digital.onrender.com/profesor-telematica?id=${id}`);
        setProfesor(response.data);
         console.log(response.data);
       } catch (error) {

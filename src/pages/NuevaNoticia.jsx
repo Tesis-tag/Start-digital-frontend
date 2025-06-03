@@ -118,7 +118,7 @@ const NuevaNoticia = () => {
       }
       */
     
-        const response = await axios.post('http://localhost:9000/gestion/noticias/registrar', formData, {
+        const response = await axios.post('https://start-digital.onrender.com/gestion/noticias/registrar', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },

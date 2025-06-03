@@ -16,7 +16,7 @@ const PublicEgresados = () => {
   useEffect(() => {
     const fetchEgresados = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/gestion/egresados/');
+        const response = await axios.get('https://start-digital.onrender.com/gestion/egresados/');
 
         // Filtrar y ordenar los egresados que son de la carrera "Telemática"
         const tele = response.data

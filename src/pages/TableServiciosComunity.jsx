@@ -38,7 +38,7 @@ const TableServiciosComunity = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/servicios/');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/servicios/');
             setProfesores(response.data);
         } catch (error) {
             console.error('Error al obtener los profesores:', error);
@@ -69,7 +69,7 @@ const TableServiciosComunity = () => {
   const eliminarProfesor = async (idProfesor) => {
     
     try {
-        await axios.delete(`http://localhost:9000/gestion/servicios/${idProfesor}`);
+        await axios.delete(`https://start-digital.onrender.com/gestion/servicios/${idProfesor}`);
         console.log('Profesor eliminado correctamente');
         
     } catch (error) {

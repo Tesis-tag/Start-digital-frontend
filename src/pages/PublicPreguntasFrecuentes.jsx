@@ -19,7 +19,7 @@ const PublicPregunetasFrecuentes = () => {
   useEffect(() => {
     const fetchProfesores = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/gestion/preguntas-frecuentes/');
+            const response = await axios.get('https://start-digital.onrender.com/gestion/preguntas-frecuentes/');
             setProfesores(response.data);
             console.log(response.data);
         } catch (error) {
