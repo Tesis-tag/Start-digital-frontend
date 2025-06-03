@@ -1,0 +1,35 @@
+.cont-tabla{
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.div-table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.div-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.td-des{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+.td-asig{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 280px;
+}
+.cont-modal{
+    width: 100%;
+}

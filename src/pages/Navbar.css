@@ -1,0 +1,188 @@
+
+.menu-ico{
+    width: 35px;
+    margin-right: 5%;
+  }
+  .logo-deca{
+    width: 70px;
+    margin-left: 5%;
+  }
+  .flecha-ico{
+    width: 20px;
+    transition: all 0.3s ease; 
+  }
+  .div-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header{
+    background: white;
+    display: block;
+    color: #00093D;
+    cursor: pointer;
+    font-size: 19px;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .nav{
+    z-index: 500;
+    
+  }
+  
+  .menu, .submenu-deca{
+    list-style: none;
+    padding: 0;
+    margin: 0
+  }
+  .menu{
+    font-family: "Kantumruy Pro", sans-serif;
+    margin-top: 0px;
+    background: white;
+    width: 100%;
+    margin-left: -100%;
+    text-transform: uppercase;
+    border-top: #00093D 2px solid;
+  }
+  
+  .menu-link{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+    color: gray;
+    border-bottom: #E3E3E3 1px solid;
+  }
+  
+  .submenu-deca .menu-link{
+    display: block;
+    text-decoration: none;
+    border-bottom: #E3E3E3 1px solid;
+  }
+  .submenu-deca{
+    font-size: 16px;
+    height: 0;
+    transition: all 0.3s;
+    text-transform: capitalize;
+  }
+  .submenu-deca .submenu-deca{
+    font-size: 16px;
+    border-top: 0;
+  }
+  .submenu-deca .submenu-deca .menu-item{
+    display: flex;
+  }
+  .submenu-deca .submenu-deca .menu-link{
+    width: 100%;
+    font-weight: 400;
+  }
+  .submenu-deca .menu-link{
+  /*  padding-left: 50px; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submenu-deca{
+    height: 0;
+    overflow: hidden;
+  
+  }
+  .menu-link:hover{
+    height: 100%;
+    color: #00093D;
+  }
+ 
+  .open{
+    margin-left: 0;
+  }
+  .close{
+    margin-left: -100%;
+  }
+  .sub-open{
+    height: auto; 
+    overflow: visible;
+  }
+  
+  
+  
+  @media(min-width:800px){
+    .menu{
+      display: flex;
+      margin: 0;
+      height: 70px;
+      border-top: inherit;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu-ico{
+      display: none;
+    }
+    .container-submenu{
+      position: relative;
+  
+    }
+    .submenu-deca{
+      position: absolute;
+      top: 70px;
+      overflow: visible;
+      z-index: 1000;
+      transition: all 0.3s;
+      opacity: 0;
+      visibility: hidden;
+      font-size: 15px;
+      left: -113px;
+      width: 340px;
+    }
+    .submenu-decanato{
+      
+    }
+    .sub-pensum{
+      
+    }
+    .submenu-decanato .submenu-deca .menu-link{
+      height: 45px;
+    }
+    .submenu-deca .submenu-deca{
+      width: 200px;
+      left: -200px;
+      z-index: 900;
+    }
+    .container-submenu:hover .submenu-deca{
+      opacity: 1;
+      visibility: visible;
+    }
+    .container-submenu:hover .submenu-deca .submenu-deca{
+      overflow: visible;
+      z-index: 1001;
+      transition: all 0.3s;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .submenu-deca .container-submenu:hover > .submenu-deca  {
+      opacity: 1;
+      visibility: visible;
+      
+      top: 0;
+    }
+    .flecha-ico{
+      display: none;
+    }
+    .menu-link{
+      background: white;
+      height: 100%;
+    }
+  }
+  

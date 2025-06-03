@@ -1,0 +1,12 @@
+
+.graf{
+    width: 500px;
+    height: 500px;
+}
+.class-input{
+    border: 2px solid gray; /* Color azul al enfocar el input */
+}
+.class-input:focus{
+    border: 2px solid cyan; /* Color azul al enfocar el input */
+    outline: none; /* Eliminar el contorno predeterminado */
+}

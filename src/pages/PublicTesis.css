@@ -1,0 +1,39 @@
+.cont-tesis {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .carta-tesis {
+    width: 100%;
+    border: 1px solid #e2e8f0; /* Bordes suaves */
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+  }
+  
+  .carta-tesis:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+  }
+  
+  .h1-pags, .h2-pags {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .p-tesis {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn-hover {
+    background-color: #011240; /* Color base */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  .btn-hover:hover {
+    background-color: #03305a; /* Color más claro para el hover */
+  }
+  

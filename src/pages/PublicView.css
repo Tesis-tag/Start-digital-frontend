@@ -1,0 +1,28 @@
+.sec-general-banner{
+    position: relative;
+	width: 100%;
+	/*height: calc(100vh - 50px);*/
+	height: 40vh;
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../img/miniportada.jpg');
+	animation: banner 28s infinite linear;
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+
+.h1-pags{
+    margin-top: 60px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.h2-pags{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

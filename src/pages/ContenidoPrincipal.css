@@ -1,0 +1,83 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Onest Variable', sans-serif;
+}
+.contenedor-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.div-cont-1, .div-cont-2, .div-cont-3, .div-cont-4{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.div-cont-1{
+    margin-bottom: 20px;
+}
+.div-cont-2{
+    display: none;
+    background: #011240;
+    color: rgba(255, 255, 255, 0.9);
+}
+.div-cont-3{
+    background: #011240;
+}
+.section{
+    padding: 20px;
+}
+.sec-1{
+    width: 60%;
+
+}
+.sec-2{
+    width: 60%;
+}
+.sec-3{
+    background: #011240;
+}
+.sec-4{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.h2-intro, .h2-carreras{
+    font-size: 45px;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+.h2-carreras{
+    color: white;
+}
+.p-intro, .p-sec-2{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    letter-spacing: .8px;
+}
+.p-intro{
+    color: rgba(0, 0, 0, 0.9);
+
+}
+.text-j{
+    text-align: justify;
+}
+.p-tele{
+    width: 800px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Onest Variable', sans-serif;
+}
+
+
+.cont-img-portada{
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}

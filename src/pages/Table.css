@@ -1,0 +1,78 @@
+.cont-gp{
+    display: flex;
+    justify-content: center;
+}
+.tabla{
+    width: 100%;
+    
+}
+
+.scrollx{
+   overflow-x: auto; 
+}
+.cont-modal{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo opaco */
+  z-index: 9998; /* Asegura que el overlay esté detrás de la modal */
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Asegura que la modal esté encima de todo */
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+.datosnt{
+    width: 417px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.icon-copy{
+    width: 20px;
+}
+.p-id{
+    width: 150px;
+    overflow: hidden;
+}
+.div-copy{
+   
+}
+.div-copy:hover{
+    background: #DBDBDB;
+}
+
+@media(max-width: 1280px) {
+    .datosnt{
+        width: 360px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+@media(max-width: 1024px) {
+    .datosnt{
+        width: 220px;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+}
+@media(max-width: 768px) {
+    .datosnt{
+        width: 250px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+}
+@media(max-width: 480px) {
+    .datosnt{
+        width: 250px;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}

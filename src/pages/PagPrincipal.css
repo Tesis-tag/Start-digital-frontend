@@ -1,0 +1,11 @@
+.bento{
+   background: #FCFEFF;
+}
+.img-deca{
+    width: 380px;
+}
+.conte-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

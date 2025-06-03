@@ -1,0 +1,29 @@
+.rbc-toolbar span:last-child {
+    display: none;
+  }
+  .rbc-date-cell {
+    pointer-events: none;
+  }
+  
+/* Calendario.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px; /* Ajusta el ancho según necesites */
+  background-color: #f8f9fa; /* Color de fondo del sidebar */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.content {
+  margin-left: 0; /* Sin margen inicial */
+  padding: 20px; /* Espaciado interno */
+  transition: margin-left 0.3s ease; /* Transición suave */
+  width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+}
+
+.content.expanded {
+  margin-left: 250px; /* Espacio para el sidebar cuando está abierto */
+}

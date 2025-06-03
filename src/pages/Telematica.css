@@ -1,0 +1,173 @@
+.main-tele{
+    min-height: 100vh;
+    
+}
+
+.sec-tele{
+
+}
+.sec-tele-banner{
+    position: relative;
+	width: 100%;
+	/*height: calc(100vh - 50px);*/
+	height: 30vh;
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../img/miniportada.jpg');
+	animation: banner 28s infinite linear;
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+.sec-informatica-banner{
+    position: relative;
+	width: 100%;
+	/*height: calc(100vh - 50px);*/
+	height: 30vh;
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../img/informatica.jpg');
+	animation: banner 28s infinite linear;
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+.sec-produccion-banner{
+    position: relative;
+	width: 100%;
+	/*height: calc(100vh - 50px);*/
+	height: 30vh;
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../img/produccion.jpg');
+	animation: banner 28s infinite linear;
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+.sec-matematica-banner{
+    position: relative;
+	width: 100%;
+	/*height: calc(100vh - 50px);*/
+	height: 30vh;
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../img/matematica.jpg');
+	animation: banner 28s infinite linear;
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+.sec-fisica-banner{
+    position: relative;
+	width: 100%;
+	/*height: calc(100vh - 50px);*/
+	height: 30vh;
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../img/fisica.jpg');
+	animation: banner 28s infinite linear;
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+.sec-analisis-banner{
+    position: relative;
+	width: 100%;
+	/*height: calc(100vh - 50px);*/
+	height: 30vh;
+	background-color: #F5F5F5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-out;
+	background-image: url('../img/analisis.jpg');
+	animation: banner 28s infinite linear;
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+
+.cont-h1-tele{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	background-color: rgba(0, 22, 40, .6);
+	flex-direction: column;
+}
+.cont-informacion{
+    margin-top: 3rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.div-informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.p-tele{
+    width: 800px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Onest Variable', sans-serif;
+}
+.h1-tele{
+    font-size: 42px;
+    margin-top: 50px;
+}
+.sec-pensum{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sec-auto-tele{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.div-auto-tele{
+    margin-bottom: 2rem;
+}
+.card-auto{
+    width: 395px;
+}
+.auto-img{
+    width: 150px;
+    height: auto;
+}
+.div-h2{
+    display: flex;
+    justify-content: center;
+}
+.h2-tele{
+    font-family: 'Onest Variable', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-j{
+    text-align: justify;
+}
+@media(max-width: 1280px) {
+   
+}
+@media(max-width: 800px) {
+   .p-tele{
+    width: 90%;
+   }
+}
+@media(max-width: 768px) {
+    
+}
+@media(max-width: 480px) {
+   
+}

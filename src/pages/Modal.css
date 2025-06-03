@@ -1,0 +1,14 @@
+.custom-swal-container {
+    z-index: 9999; /* O cualquier valor alto que asegure que la alerta esté por encima del modal */
+  }
+  .select-profesor {
+  }
+
+  /* Modal.css */
+.modal {
+  z-index: 1000; /* Ajusta este valor según sea necesario */
+}
+
+.swal2-container {
+  z-index: 20000; /* Asegúrate de que este valor sea mayor que el del modal */
+}
